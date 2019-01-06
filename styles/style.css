@@ -4,6 +4,27 @@ html, body
     height: 100%;
 }
 
+@font-face
+{
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Light.ttf");
+    font-weight: lighter;
+}
+
 .container
 {
     min-height: 100%;
