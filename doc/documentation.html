@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Dokumentacja</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Dominik Kobyra">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/doc_style.css">
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <header>
+            <h1>Dokumentacja projektu</h1>
+        </header>
+        
+        <main>
+            <article>
+                <h3>Tematyka projektu</h3>
+                <p>
+                    Tematem mojego projektu jest jedna z głównych teorii fizyki - mechanika klasyczna. Opisałem główne działy powyższej teorii, czyli zasady dynamiki Newtona,
+                    teorię chaosu oraz mechanikę płynów, a także utworzyłem odnośniki do różnych pojęć dotyczących tematu.
+                </p>
+
+                <h3>Technologie wykorzystane w projekcie</h3>
+                <p>
+                    Do wykonania projektu użyłem języka HTML5, CSS3 oraz JavaScript.
+                </p>
+
+                <h3>HTML5</h3>
+                <p>
+                    W projekcie wykorzystałem elementy semantyczne języka HTML5, takie jak: <span class="span_part">header, main, section, video, footer, article</span>.
+                    Do oddzielania grup elementów używałem głównie tagu <span class="span_part">div</span>.
+                </p>
+
+                <h3>CSS3</h3>
+                <p>
+                    Przy pomocy języka CSS3 zastosowałem style pozycjonujące i stylizujące elementy na stronie. Do pozycjonowania używałem głównie właściwości
+                    <span class="span_part">display: flex</span> oraz <span class="span_part">display: grid</span>, które w połączeniu z właściwościami typu
+                    <span class="span_part">justify-content</span>, <span class="span_part">align-items</span> czy <span class="span_part">align/justify-self</span>
+                    (dla elementów wewnętrznych) pozwoliły prawidłowo rozmieścić zawartość strony.
+                </p>
+                <p>
+                    W celu modyfikacji wyglądu elementów, np. zaokrąglenia rogów kontenerów, kolorów tła, kolorów i rozmiaru czcionki, zmiany rozmiaru kontenerów oraz
+                    innych właściwości podobnego typu, również wykorzystałem język CSS3.
+                </p>
+                <p>
+                    Ostatnią funkcją języka CSS3 w moim projekcie było wykonanie animacji i przejść. Są one widoczne między innymi po najechaniu na ikonę strony domowej, linki, zdjęcia,
+                    po kliknięciu przycisków zmieniających rozmiar czcionki oraz po kliknięciu na dowolny link w zakładce "Różne". Animacja jest również widoczna po najechaniu
+                    na strzałkę powrotu do strony głównej znajdujacą się na stronie dokumentacji w górnym lewym rogu.
+                </p>
+
+                <h3>JavaScript</h3>
+                <p>
+                    W skrypcie języka JavaScript opisałem kilka głównych funkcji pełniących różne role w projekcie:
+                </p>
+                <ul>
+                    <li>
+                        window.onload = function() {...} - funkcja wykonywana po załadowaniu strony. W funkcji tej przypisałem różnym elementom "nasłuchiwaczy zdarzeń" metodą <span class="span_part">addEventListener</span>, których
+                        zastosowaniem jest uruchamianie określonych procedur, gdy dane wydarzenie (np. kliknięcie na element) będzie miało miejsce. Wewnątrz tej funkcji
+                        zdefiniowałem również kolejną funkcję uruchamianą po załadowaniu ramki zdefiniowanej w dokumencie HTML. Po wykonaniu powyższych instrukcji wywoływane
+                        są metody <span class="span_part">loadFontElements()</span> oraz <span class="span_part">centerParagraphs()</span>.
+                    </li>
+                    <li>
+                        loadContent() - funkcja pobierająca elementy zawierające klasę "sections", a następnie ustawiająca <span class="span_part">display: block</span> dla elementów
+                        zawierających na liście klas klasę podaną w parametrze funkcji, oraz <span class="span_part">display: none</span> dla pozostałych elementów.
+                        Funkcja ta ukrywa również ramkę z sekcji "Różne" po przejściu do innej sekcji.
+                    </li>
+                    <li>
+                        fontSize() - funkcja zmieniająca rozmiar tekstu na stronie o podaną wartość (domyślnie 1px). Rozmiar czcionki można zmienić określoną ilość razy - 
+                        dwukrotnie poniżej rozmiaru domyślnego oraz dwukrotnie powyżej.
+                    </li>
+                    <li>
+                        loadFontElements() - funkcja, której przeznaczeniem jest załadowanie do zmiennej globalnej elementów o podanych tagach, oraz usunięcie z utworzonej tablicy
+                        elementów nie zawierających wartości tekstowej.
+                    </li>
+                    <li>
+                        centerParagraphs() - funkcja wybierająca elementy o klasie "center_text" oraz zmieniająca ich atrybut <span class="span_part">text-align</span> na "center".
+                    </li>
+                    <li>
+                        expandFrame() - funkcja rozszerzająca ramkę w sekcji "Różne" po kliknięciu na dowolny link. Zmienia wartości atrybutów stylu ramki:
+                        <span class="span_part">display</span>, <span class="span_part">height</span>, <span class="span_part">width</span> oraz <span class="span_part">opacity</span>.
+                    </li>
+                </ul>
+
+                <h3>Zasoby wykorzystane w projekcie</h3>
+
+                <p>
+                    Ikony w formacie ".svg" wykonałem w programie Inkscape. Zdjęcia wykorzystane w artykułach pochodzą z wikipedii, film przedstawiający zasady dynamiki Newtona
+                    pochodzi z kanału TED-Ed na youtube.com.
+                </p>
+            </article>
+        </main>
+        
+        <a class="home_link" href="../index.html"><img class="homearrow" src="../images/svg/home_arrow.svg" alt="Ikona strony domowej"></a>
+
+        <footer>
+            <div>
+                <p>
+                    Autor: Dominik Kobyra
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

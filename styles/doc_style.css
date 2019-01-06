@@ -1,0 +1,130 @@
+html, body
+{
+    height: 100%;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+body
+{
+    margin: 0;
+    background-color: cadetblue;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-row-gap: 10px;
+
+    grid-template-areas: ". head ."
+                         ". mid ."
+                         ". foot .";
+}
+
+header
+{
+    grid-area: head;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main
+{
+    grid-area: mid;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer
+{
+    grid-area: foot;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homearrow
+{
+    height: 70px;
+    align-self: center;
+    justify-self: center;
+}
+
+.homearrow:hover
+{
+    animation: arrow_animation;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes arrow_animation
+{
+    0%   { transform: scale(1.0, 1.0); }
+    50%  { transform: scale(0.9, 0.9); }
+    100% { transform: scale(1.0, 1.0); }
+}
+
+.home_link
+{
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+}
+
+article h3:first-child
+{
+    margin: 20px 0 8px 0;
+}
+
+article h3:not(:first-child)
+{
+    margin: 40px 0 8px 0;
+}
+
+article p
+{
+    margin: 8px 0;
+    text-align: left;
+}
+
+article ul
+{
+    margin: 0 0 5px 0;
+}
+
+article li
+{
+    text-align: left;
+    margin: 15px 0;
+}
+
+.span_part
+{
+    color: rgb(141, 18, 212);
+}

@@ -1,0 +1,496 @@
+html, body
+{
+    margin: 0;
+    height: 100%;
+}
+
+.container
+{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas: "top_header top_header top_header top_header"
+                         "main main main main"
+                         "page_footer page_footer page_footer page_footer";
+}
+
+.top_header
+{
+    grid-area: top_header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "page_title top_nav";
+    align-items: center;
+}
+
+.page_title
+{
+    background-color: brown;
+    grid-area: page_title;
+    height: 100%;
+    min-width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_title_wrapper
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.homepage_icon
+{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.homepage_icon:hover
+{
+    animation-name: home_animation;
+    animation-duration: 1300ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes home_animation
+{
+    60%  { transform: rotate(0) scale(0.75, 0.75); }
+    100% { transform: rotate(360deg) scale(1.0, 1.0); }
+}
+
+.title
+{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.top_nav
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 100%;
+}
+
+/* creating dropdown menu - start */
+
+.drop_button
+{
+    background-color: #F2B134;
+    font-size: 20px;
+    border: none;
+    min-width: 180px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    transition: background-color 400ms ease;
+    cursor: pointer;
+}
+
+.dropdown
+{
+    position: relative;
+    width: 100%;
+}
+
+.drop_content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+}
+
+.drop_content a
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    transition: background-color 500ms ease;
+    cursor: pointer;
+}
+
+.drop_content a:hover
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .drop_content
+{
+    display: block;
+}
+
+.dropdown:hover .drop_button
+{
+    background-color: #F28A34;
+}
+
+/* creating dropdown menu - end */
+
+main
+{
+    background-image: url(../images/svg/background.svg);
+    background-repeat: repeat;
+    grid-area: main;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    display: grid;
+    grid-row-gap: 10px;
+    align-content: start;
+    padding: 10px;
+}
+
+.page_footer
+{
+    background-color: #113042;
+    grid-area: page_footer;
+    font-size: 13px;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.page_footer p
+{
+    margin: 3px 0;
+}
+
+.page_footer a
+{
+    color: darksalmon;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.page_footer div
+{
+    text-align: center;
+}
+
+.page_footer div:first-child
+{
+    display: flex;
+    align-items: center;
+}
+
+.page_footer div:first-child
+{
+    font-weight: bold;
+}
+
+.page_footer div:first-child :nth-child(1)
+{
+    font-size: 20px;
+}
+
+.page_footer div:first-child :nth-child(2)
+{
+    font-size: 16px;
+}
+
+.page_footer div:first-child :nth-child(3)
+{
+    font-size: 12px;
+}
+
+.page_footer div:first-child :not(:last-child)
+{
+    margin-right: 5px;
+}
+
+@keyframes wikilink_animation
+{
+    0%   { color: darksalmon; }
+    50%  { color: chartreuse; }
+    100% { color: darksalmon; }
+}
+
+.page_footer a:hover
+{
+    text-decoration: none;
+    animation-name: wikilink_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.arrow_down
+{
+    width: 0;
+    height: 0;
+    display: inline-block;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid white;
+}
+
+.content
+{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+.content > p
+{
+    background-color: #409681;
+    opacity: 0.9;
+    color: white;
+    text-align: left;
+    line-height: 1.4;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.content > :nth-child(2)
+{
+    margin: 0 10px 0 10px;
+    padding: 20px 20px 10px 20px;
+}
+
+.content > p:first-child
+{
+    margin: 0 10px 0 10px;
+    padding: 20px 20px 10px 20px;
+}
+
+.content > p:last-child
+{
+    margin: 0 10px 10px 10px;
+    padding: 10px 20px 20px 20px;
+}
+
+.content > p:only-child
+{
+    margin: 0 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.content > ul
+{
+    background-color: #409681;
+    opacity: 0.9;
+    color: white;
+    text-align: justify;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 0 30px;
+}
+
+.content > ul:first-child
+{
+    margin: 10px 10px 0 10px;
+    padding: 20px 30px 0 30px;
+}
+
+.content > ul:last-child
+{
+    margin: 0 10px 10px 10px;
+    padding: 0 30px 20px 30px;
+}
+
+.content > ul > li
+{
+    margin: 0 10px;
+    padding: 3px 20px 3px 0;
+}
+
+.content > ul > li a
+{
+    text-decoration: none;
+    color: rgb(176, 255, 102);
+}
+
+.content > ul > li a:hover
+{
+    animation-name: link_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes link_animation
+{
+    0%   { color: rgb(176, 255, 102); }
+    50%  { color: rgb(150, 34, 185); }
+    100% { color: rgb(176, 255, 102); }
+}
+
+.section_header
+{
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 20px 20px 30px;
+    background-color: rgba(5, 115, 117, 0.33);
+    opacity: 0.9;
+    height: fit-content;
+}
+
+.section_aside
+{
+    padding: 0 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_horizontal
+{
+    display: flex;
+    background-color: rgba(5, 115, 117, 0.33);
+    opacity: 0.9;
+    align-items: start;
+}
+
+.aside_image
+{
+    width: 300px;
+    cursor: pointer;
+}
+
+.aside_image:hover
+{
+    animation-name: expand_image;
+    animation-duration: 300ms;
+}
+
+@keyframes expand_image
+{
+    0%   { transform: scale(1.0, 1.0); }
+    40%  { transform: scale(0.95, 0.95); }
+    70%  { transform: scale(1.05, 1.05); }
+    100% { transform: scale(1.0, 1.0); }
+}
+
+.image_footer > h6
+{
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.fontsize_icons
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.fonticon
+{
+    animation: fonticon_animation;
+    animation-duration: 200ms;
+}
+
+@keyframes fonticon_animation
+{
+    0%   { transform: scale(1.0, 1.0); }
+    20%  { transform: scale(0.9, 0.9); }
+    70%  { transform: scale(1.05, 1.05); }
+    100% { transform: scale(1.0, 1.0); }
+}
+
+.center_text
+{
+    width: 60%;
+    background-color: #14a75d;
+    opacity: 0.9;
+    color: white;
+    line-height: 1.4;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.adjust_padding
+{
+    padding-top: 20px !important;
+}
+
+.italic
+{
+    font-style: italic;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+#frametag
+{
+    border: none;
+    width: 0;
+    opacity: 0;
+    display: block;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    transition: width 3s, opacity 3s;
+}
+
+.article_header
+{
+    display: none;
+}
+
+.video_wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video_wrapper > p
+{
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 5px 10px;
+    line-height: 1.5;
+    margin: 0;
+    width: 33%;
+    text-align: center;
+}
+
+.video_wrapper > p > a
+{
+    text-decoration: none;
+    color: rgb(176, 255, 102);
+}
+
+.video_wrapper > p > a:hover
+{
+    animation-name: link_animation;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.video_section
+{
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 25px;
+}

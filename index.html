@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Projekt 1</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Dominik Kobyra">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="top_header">
+                <div class="page_title">
+                    <div class="icon_title_wrapper">
+                        <img id="home_icon" class="homepage_icon" src="images/svg/home_icon.svg" alt="Ikona strony domowej">
+                        <h1 class="title">Mechanika klasyczna</h1>
+                    </div>
+                </div>
+
+                <nav class="top_nav">
+                    <div class="dropdown">
+                        <button id="button1" class="drop_button">
+                            Zasady dynamiki Newtona
+                            <i class="arrow_down"></i>
+                        </button>
+
+                        <div class="drop_content">
+                            <a id="b1_1">Pierwsza</a>
+                            <a id="b1_2">Druga</a>
+                            <a id="b1_3">Trzecia</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button id="button2" class="drop_button">
+                            Teoria chaosu
+                            <i class="arrow_down"></i>
+                        </button>
+
+                        <div class="drop_content">
+                            <a id="b2_1">Układy chaotyczne</a>
+                            <a id="b2_2">Atraktory</a>
+                            <a id="b2_3">Przykłady</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button id="button3" class="drop_button">
+                            Mechanika płynów
+                            <i class="arrow_down"></i>
+                        </button>
+
+                        <div class="drop_content">
+                            <a id="b3_1">Założenia</a>
+                            <a id="b3_2">Działy</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button id="button4" class="drop_button">
+                            Różne pojęcia
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            
+            <main>
+                <section class="sections home">
+                    <h3 class="section_header">Czym jest mechanika klasyczna?</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis mechaniki klasycznej</h4>
+
+                            <p>
+                                Mechanika klasyczna jest to dział mechaniki w fizyce opisujący ruch ciał (kinematyka), wpływ oddziaływań na ruch ciał (dynamika) oraz badaniem równowagi ciał materialnych (statyka). Mechanika klasyczna oparta jest na prawach ruchu (zasadach dynamiki) sformułowanych przez Isaaca Newtona, dlatego też jest ona nazywana „mechaniką Newtona” (Principia). Mechanika klasyczna wyjaśnia poprawnie zachowanie się większości ciał w naszym otoczeniu.
+                                Do końca XIX wieku była uznawana za teorię dokładną, na początku XX wieku okazała się niepoprawna w niektórych sytuacjach. W celu wyjaśnienia niezgodności powstały nowe działy mechaniki:
+                            </p>
+
+                            <ul>
+                                <li>mechanika relatywistyczna wraz z jej teoriami – ogólną teorią względności i szczególną teorią względności, opisujące zachowanie się obiektów poruszających się z prędkością porównywalną z prędkością światła w próżni</li>
+                                <li>mechanika kwantowa, opisująca zachowanie się mikroskopijnych obiektów (cząsteczki, atomy, cząstki elementarne)</li>
+                            </ul>
+
+                            <p>
+                                Wymienione teorie w pewnym sensie obalają mechanikę klasyczną, choć są zbudowane na jej bazie pojęciowej i ją uzupełniają. Mimo tego mechanika klasyczna jest nadal bardzo użyteczna, ponieważ:
+                            </p>
+
+                            <ul>
+                                <li>jest prostsza w stosowaniu niż inne teorie</li>
+                                <li>z pewnymi przybliżeniami może być stosowana w szerokim zakresie</li>
+                                <li>stanowi podstawę pojęciową dla innych teorii</li>
+                            </ul>
+
+                            <p>
+                                Mechanika klasyczna może być używana do opisu ruchu zarówno obiektów rozmiaru makroskopowych (np. piłka, samochód), w tym obiektów astronomicznych (np. planety, galaktyki), jak i obiektów mikroskopijnej wielkości (np. cząsteczek organicznych, a nawet - w dużym przybliżeniu i w ograniczonym zakresie - do cząstek elementarnych). Przykładowo: równanie ruchu elektronu, wynikające z mechaniki klasycznej, poprawnie opisuje działanie mikroskopu elektronowego; dopiero do wyjaśnienia ograniczeń rozdzielczości tego mikroskopu potrzeba odwołania do mechaniki kwantowej, a wyjaśnienie działania mikroskopu elektronowego z użyciem samych pojęć mechaniki kwantowej byłoby trudne.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections home">
+                        <h3 class="section_header">Poddziedziny</h3>
+                    
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Poddziedziny mechaniki klasycznej</h4>
+
+                            <p>
+                                Chociaż mechanika klasyczna jest z grubsza zgodna z innymi „klasycznymi” teoriami, takimi jak klasyczna elektrodynamika i termodynamika, to pewne sprzeczności odkryte pod koniec XIX wieku są wyjaśniane przez współczesną fizykę. Przykładowo klasyczna elektrodynamika mówi, że prędkość światła w próżni jest stała dla wszystkich obserwatorów – jest to sprzeczne z mechaniką klasyczną, w wyniku czego powstała ogólna teoria względności.
+                                W mechanice klasycznej można wydzielić poddziedziny:
+                            </p>
+
+                            <ul>
+                                <li>kinematyka – opisująca ruch jako zagadnienie geometryczne</li>
+                                <li>statyka – zajmująca się ciałami nie poruszającymi się i warunkami pozostania ciał w spoczynku (równowadze)</li>
+                                <li>dynamika – opisująca ruch ciał oraz zmiany ruchu ciał pod wpływem oddziaływań</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections dynamika">
+                    <h3 class="section_header">Zasady dynamiki Newtona</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis zasad dynamiki Newtona</h4>
+
+                            <p>
+                                Zasady dynamiki Newtona to trzy zasady leżące u podstaw mechaniki klasycznej sformułowane przez Isaaca Newtona i opublikowane w Philosophiae Naturalis Principia Mathematica w 1687 roku. Zasady dynamiki określają związki między ruchem ciała a siłami działającymi na nie, dlatego zwane są też prawami ruchu.
+                                W mechanice kwantowej przeważnie nie mają zastosowania, w mechanice relatywistycznej obowiązują w ograniczonym zakresie.
+                            </p>
+                            <p>
+                                Zasady te zastąpiły wcześniejszą fizykę Arystotelesa. Zlikwidowały pojęcia absolutnego spoczynku i absolutnego ruchu. Ruch jest w nich traktowany przede wszystkim jako pewien stan, a nie – jak uważano wcześniej – proces.
+                                Zasady dynamiki Newtona są stosowane do punktów materialnych, które są idealizacją rzeczywistych ciał w tym sensie, że wielkość i kształt ciała obiektu są zaniedbane. Odpowiada to ciałom, które są małe w porównaniu do odległości między nimi, a odkształcenia i obrót ciała są bez znaczenia. W ten sposób nawet planeta może być traktowana jako punkt materialny przy analizie ruchu orbitalnego wokół swojej gwiazdy.
+                                W swojej oryginalnej postaci zasady dynamiki Newtona nie są odpowiednie do charakterystyki ruchu ciał rozciągłych (a zwłaszcza ciał odkształcalnych). Uogólnieniem zasad Newtona dla sztywnych niepunktowych ciał są prawa ruchu Eulera (można je również odnieść do ruchu obrotowego).
+                            </p>
+                        </article>
+
+                        <aside class="section_aside">
+                            <a href="https://pl.wikipedia.org/wiki/Isaac_Newton"><img class="aside_image" src="images/IsaacNewton.jpg" alt="Zdjęcie przedstawiające Isaaca Newtona"></a>
+                            <footer class="image_footer">
+                                <h6>Isaac Newton</h6>
+                            </footer>
+                        </aside>
+                    </div>
+
+                    <div class="video_wrapper">
+                        <video class="video_section" width="560" height="315" src="videos/newtonslaws.mp4" controls="controls">Twoja przeglądarka nie obsługuje tagów video</video>
+                        <p>
+                            Film prezentujący zasady dynamiki Newtona<br>
+                            Źródło: <a href="https://youtu.be/JGO_zDWmkvk">TED-Ed (youtube)</a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="sections zasada1">
+                    <h3 class="section_header">Pierwsza zasada dynamiki Newtona</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis pierwszej zasady</h4>
+
+                            <p class="center_text">
+                                W inercjalnym układzie odniesienia, jeśli na ciało nie działa żadna siła lub siły działające równoważą się, to ciało pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym.
+                            </p>
+
+                            <p class="adjust_padding">
+                                Pierwsza zasada dynamiki Newtona jest rozwinięciem idei Galileusza, który zauważył, że jeżeli usuniemy przeszkody ruchu, to zniknie potrzeba podtrzymywania ruchu przez jakąkolwiek siłę. Ruch jednostajny prostoliniowy będzie się odbywać sam przez siebie, bez żadnej pomocy z zewnątrz, o takim ruchu mówimy czasem jako o ruchu swobodnym. Galileusz stwierdza, że z każdym obiektem można związać układ odniesienia i że opisy tego samego ruchu w każdym układzie są równoważne. Stwierdzenie to nazywane jest zasadą względności. Galileusz opisał także sposób zamiany wielkości opisujących ruch, gdy zmieniany jest układ odniesienia, zwany transformacją Galileusza.
+                                Wybierzmy ciało spełniające założenia pierwszej zasady dynamiki i przypiszmy mu pewien układ odniesienia. Każde ciało, na które też nie działa żadna siła, będzie w tym układzie odniesienia również spoczywało lub poruszało się po linii prostej ruchem jednostajnym. Każdemu takiemu ciału również można przypisać pewien nowy układ odniesienia. Układy te będą względem siebie spoczywały lub poruszały się ruchem jednostajnym prostoliniowym. Takie układy odniesienia nazywamy układami inercjalnymi.
+                                Dlatego pierwsza zasada dynamiki jest traktowana jako postulat istnienia inercjalnego układu odniesienia i jest formułowana:<br>
+                                <span class="italic">Istnieje układ odniesienia, w którym cząstka nie podlegająca oddziaływaniu z otoczeniem, spoczywa lub porusza się po prostej ze stałą prędkością.</span><br>
+                                Pierwsza zasada dynamiki zakłada istnienie inercjalnego układu odniesienia, nie wskazuje jak należy szukać takiego układu, dlatego jest postulatem istnienia inercjalnego układu odniesienia.
+                                Jeżeli istnieje jeden inercjalny układ odniesienia, to istnieje ich nieskończenie wiele. Układy inercjalne spoczywają lub poruszają się względem siebie po linii prostej ze stałą prędkością.
+                                Wyżej opisany sposób zamiany opisu ruchu z jednego układu odniesienia do innego w mechanice klasycznej nazywany jest transformacją Galileusza.
+                                Bezwładność ciał jest to zdolność ciał do przeciwstawiania się wszelkim zmianom ruchu. Miarą bezwładności ciała jest jego masa.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections zasada2">
+                    <h3 class="section_header">Druga zasada dynamiki Newtona</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis drugiej zasady</h4>
+
+                            <p class="center_text">
+                                W inercjalnym układzie odniesienia jeśli siły działające na ciało nie równoważą się, to ciało porusza się z przyspieszeniem wprost proporcjonalnym do siły wypadkowej, a odwrotnie proporcjonalnym do masy ciała.
+                            </p>
+
+                            <p class="adjust_padding">
+                                Zasada ta obowiązuje również dla ciała o zmiennej masie np. w mechanice relatywistycznej.
+                                Przy założeniu, że ciało jest punktem materialnym o stałej masie (np. gdy nie występują efekty relatywistyczne dotyczące m.in. masy, czyli dla prędkości znacznie mniejszych od prędkości światła w próżni), oba sformułowania drugiej zasady są równoznaczne:
+                                Dlatego wersja w postaci uproszczonej funkcjonuje na wstępnych etapach nauczania fizyki i jest stosowana powszechnie do obliczeń:<br>
+                                <span class="italic">Przyspieszenie, z jakim porusza się ciało, jest proporcjonalne do działającej siły, a odwrotność masy jest współczynnikiem proporcjonalności. Kierunek i zwrot przyspieszenia jest zgodny z kierunkiem i zwrotem siły.</span><br>
+                                Gdy wypadkowa siła działająca na ciało jest równa zeru, to przyspieszenie ciała jest równe zero, czyli ciało porusza się ze stałą prędkością lub pozostaje w spoczynku, co jest równoznaczne z treścią pierwszej zasady dynamiki. Zatem pierwsza zasada stanowi szczególny przypadek drugiej zasady. Niezależne od siebie są tylko druga i trzecia spośród zasad dynamiki Newtona.
+                                Po raz pierwszy drugą zasadę dynamiki Newtona zapisał wzorem matematycznym Jakob Hermann w swoim dziele Phoronomia z 1716 roku.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections zasada3">
+                    <h3 class="section_header">Trzecia zasada dynamiki Newtona</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis trzeciej zasady</h4>
+
+                            <p class="center_text">
+                                    Oddziaływania ciał są zawsze wzajemne. W inercjalnym układzie odniesienia siły wzajemnego oddziaływania dwóch ciał mają takie same wartości, taki sam kierunek, przeciwne zwroty i różne punkty przyłożenia.
+                            </p>
+
+                            <p class="adjust_padding">
+                                    Jeśli ciało A działa na ciało B siłą F (akcja), to ciało B działa na ciało A siłą (reakcja) o takiej samej wartości i kierunku, lecz o przeciwnym zwrocie.
+                                    W wersji skróconej:<br>
+                                    <span class="italic">Każdej akcji towarzyszy reakcja równa co do wartości i kierunku, lecz przeciwnie zwrócona.</span><br>
+                                    Lecz należy pamiętać, że te siły się nie równoważą (gdyż działają na różne ciała).
+                                    Przeważnie w mechanice klasycznej III zasada dynamiki Newtona i zasada zachowania pędu są równoważne[b]. Obie nie obowiązują gdy układ fizyczny nie jest odosobniony czy podczas kreacji par cząstek wirtualnych.                                    
+                                    Zasady dynamiki można również zapisać dla wielkości kątowych w ruchu obrotowym, ale prosta analogia ma miejsce tylko w przypadkach, gdy oś obrotu nie zmienia kierunku (ustalona oś, toczenie prostoliniowe). Zasady te mogą być stosowane w układach nieinercjalnych po uwzględnieniu sił bezwładności.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections chaos">
+                    <h3 class="section_header">Chaos (matematyka)</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis pojęcia chaosu</h4>
+
+                            <p>
+                                Chaos deterministyczny jest to własność równań lub układów równań, polegająca na dużej wrażliwości rozwiązań na dowolnie małe zaburzenie parametrów. Dotyczy to zwykle nieliniowych równań różniczkowych i różnicowych, opisujących układy dynamiczne.
+                                Przesłankę prowadzącą do sformułowania teorii chaosu były badania Edwarda Lorenza nad modelami prognozowania pogody. Zgodnie z ówczesnym, deterministycznym rozumieniem rzeczywistości minimalna zmiana warunków początkowych powinna prowadzić do proporcjonalnie niewielkich zmian wyniku modelu. W trakcie pracy nad modelem, z natury dynamicznym (dane z iteracji wcześniejszych są danymi wejściowymi dla iteracji następujących), w celu ułatwienia pracy wprowadził zaokrąglone wartości wyjściowe. Okazało się, że wynik modelu diametralnie odbiegał od tego co przewidywał ten sam model przy danych wprowadzonych z większą dokładnością.
+                            </p>
+                            <p>
+                                Dalsze badania nad układami dynamicznymi doprowadziły do wniosku, iż wbrew powszechnym przekonaniom w nauce, niewielkie zaburzenie warunków początkowych powoduje rosnące wykładniczo z czasem zmiany w zachowaniu układu. Popularnie nazywane jest to efektem motyla - znikoma różnica na jakimś etapie może po dłuższym czasie urosnąć do dowolnie dużych rozmiarów. Powoduje to, że choć model jest deterministyczny, w dłuższej skali czasowej wydaje się zachowywać w sposób losowy.
+                                Zachowanie takie można zaobserwować w wielu zjawiskach fizycznych, między innymi w zmianach pogody, oscylujących reakcjach chemicznych, zachowaniu niektórych obwodów elektrycznych i ruchu ciał oddziałujących grawitacyjnie.
+                            </p>
+                        </article>
+
+                        <aside class="section_aside">
+                            <a href="https://pl.wikipedia.org/wiki/Uk%C5%82ad_Lorenza"><img class="aside_image" src="images/lorenz.png" alt="Zdjęcie przedstawiające atraktor Lorenza"></a>
+                            <footer class="image_footer">
+                                <h6>Atraktor Lorenza</h6>
+                            </footer>
+                        </aside>
+                    </div>
+                </section>
+
+                <section class="sections chaos_uklady">
+                    <h3 class="section_header">Układy chaotyczne</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis układów chaotycznych</h4>
+
+                            <p>
+                                Ścisłym kryterium chaotyczności jest określenie wartości wykładników Lapunowa. Układ jest chaotyczny, jeśli ma co najmniej jeden dodatni wykładnik Lapunowa. W takim wypadku w przestrzeni fazowej blisko leżące trajektorie mogą po pewnym czasie dowolnie się od siebie oddalić (to oddalanie się "z czasem" różnych trajektorii obliczonych dla odmiennych wartości parametru leży w definicji chaotyczności względem tego parametru). Choć dla idealnie dokładnie zadanych parametrów początkowych jesteśmy w stanie dokładnie przewidzieć zachowanie się układu, w praktyce, gdzie warunki początkowe znane są zawsze ze skończoną dokładnością, w krótkim czasie układ staje się nieprzewidywalny.
+                                Szczególną cechą układów chaotycznych jest tzw. mieszanie topologiczne. Oznacza ono, że jeśli weźmiemy dowolny region (zbiór otwarty) w przestrzeni fazowej układu, to w miarę jego ewolucji w czasie pokryje się on częściowo z dowolnym innym wybranym regionem.
+                            </p>
+                            <p>
+                                Warto nadmienić, że niektóre równania i układy liniowe posiadają także rozwiązania niestabilne. Tym samym niestabilność rozwiązań jest własnością słabszą niż chaotyczność. W przypadkach liniowych niestabilność dotyczy jednak jedynie specjalnie dobranych warunków początkowych. Układ jest uważany za chaotyczny, gdy niestabilność dotyczy prawie wszystkich warunków początkowych (formalnie zestawy tych warunków tworzą zbiór gęsty).
+                                Dowiedzenie, że dany, konkretny układ równań jest chaotyczny dla pewnych wartości parametrów modelu, jest na ogół procesem złożonym. Dlatego niewłaściwe jest nazywanie chaotycznym każdego układu przejawiającego skomplikowane zachowania. Przykładami układów mylnie nazywanych chaotycznymi są turbulencje i zachowanie giełdy. Nie udowodniono chaotyczności dla pełnego układu równań Naviera-Stokesa, a dla zachowania giełdy nie znamy nawet równań różnicowych czy różniczkowych, opisujących ją w zadowalający sposób. Tym samym nie potrafimy się wypowiedzieć o chaotyczności ich rozwiązań.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections atraktory">
+                    <h3 class="section_header">Atraktory</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis atraktorów</h4>
+
+                            <p>
+                                Niektóre układy dynamiczne są chaotyczne wszędzie, ale w większości wypadków takie zachowanie dotyczy jedynie pewnego podzbioru przestrzeni fazowej. Najbardziej interesujący przypadek zachodzi, gdy chaotyczność dotyczy jakiegoś atraktora, gdyż trajektorie z całego jego obszaru przyciągania mają tę własność.
+                                Atraktory w układach liniowych są zwykle punktami lub okręgami. W układach chaotycznych pojawiają się dziwne atraktory – o bardzo złożonej budowie, często fraktalnej.
+                            </p>
+                            <p>
+                                Jednym z najsłynniejszych przykładów jest trójwymiarowy atraktor Lorenza, przypominający kształtem motyla.                                    
+                                W celu badania własności chaosu rozwinięto wiele technik w zakresie analizy równań różniczkowych oraz wykorzystano w nowy sposób wiele istniejących narzędzi matematycznych. Na potrzeby symulacji komputerowych dla układów chaotycznych korzysta się z przekrojów Poincarégo, umożliwiających zmniejszenie wymiaru przestrzeni fazowej. Następnie z własności tych przekrojów wnioskuje się na temat własności pełnej przestrzeni fazowej rozwiązań.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections chaos_przyklady">
+                    <h3 class="section_header">Przykłady</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Przykłady układów chaotycznych</h4>
+
+                            <p>
+                                Układy równań różniczkowych (układy dynamiczne):
+                            </p>
+                            <ul>
+                                <li>układ Lorenza</li>
+                                <li>układ Rosslera</li>
+                                <li>układ Hénona-Heilesa</li>
+                                <li>wahadło z wymuszeniem</li>
+                                <li>niektóre autokatalityczne reakcje chemiczne</li>
+                                <li>równania fenomenologiczne opisujące migotanie świetlówki</li>
+                                <li>proste modele układów populacyjnych, np. układ Lotka-Volterra</li>
+                            </ul>
+                            <p>
+                                Układy równań różnicowych:
+                            </p>
+                            <ul>
+                                <li>iteracja równań kwadratowych, np. 1-wymiarowe odwzorowanie logistyczne i 2-wymiarowe odwzorowanie Hénona</li>
+                                <li>bilardy chaotyczne</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections plyny">
+                    <h3 class="section_header">Mechanika płynów</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis mechaniki płynów</h4>
+
+                            <p>
+                                Mechanika płynów (ang. fluid mechanics) – dział mechaniki ośrodków ciągłych zajmujący się analizą ruchu płynów. Przez płyny rozumie się tutaj zarówno ciecze, jak i gazy. Rozwiązaniem zagadnień mechaniki płynów zwykle jest określenie własności płynu (takich jak gęstość, temperatura) i własności danego przepływu (podanie pola prędkości, ciśnienia), w zależności od współrzędnych przestrzennych i czasu.
+                                Mechanika płynów jest poddziedziną mechaniki ośrodków ciągłych.
+                            </p>
+                            <p>
+                                Z punktu widzenia mechaniki, płyn jest substancją, w której nie występuje ścinanie, dlatego płyn w stanie spoczynku przybiera kształt zawierającego go naczynia.
+                            </p>
+                        </article>
+
+                        <aside class="section_aside">
+                            <a href="https://pl.wikipedia.org/wiki/R%C3%B3wnanie_Bernoulliego"><img class="aside_image" src="images/bernoulli.png" alt="Zdjęcie ilustracje prawo Bernoulliego"></a>
+                            <footer class="image_footer">
+                                <h6>Ilustracja prawa Bernoulliego</h6>
+                            </footer>
+                        </aside>
+                    </div>
+                </section>
+
+                <section class="sections plyny_zalozenia">
+                    <h3 class="section_header">Założenia</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis założeń mechaniki płynów</h4>
+
+                            <p>
+                                Tak jak każdy model matematyczny rzeczywistego świata, mechanika płynów tworzy pewne upraszczające założenia co do badanych ośrodków. Te założenia są odzwierciedlane w równaniach, które muszą się zgodzić, by uzyskany opis odpowiadał rzeczywistości. Przykładowo, rozważając nieściśliwy płyn w przestrzeni trójwymiarowej, przy założeniu zachowania masy, wynika że dla każdej np. kulistej przestrzeni o niezmiennym kształcie, ilość masy przechodząca z zewnątrz do wewnątrz musi być taka sama, jak ilość masy przechodzącej w odwrotną stronę. (Inaczej, masa wewnątrz pozostaje stała, podobnie jak masa na zewnątrz). Warunek ten można wyrazić równaniem całkowym tej przestrzeni.<br>
+                                W mechanice płynów zakłada się, że każdy płyn zachowuje się według następujących zasad:
+                            </p>
+                            <ul>
+                                <li>zasada zachowania masy</li>
+                                <li>zasada zachowania pędu</li>
+                                <li>zasada ciągłości przepływu</li>
+                            </ul>
+                            <p>
+                                Często używany jest model, w którym zakłada się, że płyn jest nieściśliwy, to znaczy, że jego gęstość się nie zmienia. Model ten dość dobrze sprawdza się w przypadku cieczy, ale już nie gazów.
+                                Podobnie można założyć, że lepkość płynu wynosi zero (tzn. że płyn jest idealny). Dotyczy to przede wszystkim gazów. Jeżeli płyn jest lepki, jego przepływ oddziałuje na ruch sąsiednich warstw płynu, jest też ograniczony przez ścianki naczynia (np. w rurze) i ciała znajdujące się w płynie. Wtedy przepływ na ściankach musi mieć zerową prędkość. Dla płynu lepkiego, jeśli ścianki przyjętej rury nie są porowate, siły ścinania pomiędzy płynem a ściankami również powodują zerową prędkość płynu przy ściankach. Jest to tak zwany warunek nieślizgania się. Natomiast w przypadku tworzyw porowatych, warunek śliskości nie powoduje zerowej prędkości przepływu przy ściankach i płyn ma nieciągłe pole prędkości pomiędzy wolnym płynem a płynem ograniczonym przez porowate ścianki (warunek Beaversa-Josepha).
+                                Natomiast w hipotezie ciągłości przyjmuje się, że płyn stanowi ośrodek ciągły, składający się nie z molekuł, lecz punktów materialnych. Takich punktów materialnych wchodzących w skład ośrodka jest niekończenie wiele. Płyn, traktowany jako ośrodek ciągły, stanowi więc nieskończony, nieprzeliczalny i spójny zbiór punktów materialnych.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections plyny_dzialy">
+                    <h3 class="section_header">Działy</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Opis działów mechaniki płynów</h4>
+
+                            <p>
+                                W zależności od rozpatrywanych wielkości, podobnie jak mechanikę klasyczną, mechanikę płynów dzieli się w sposób tradycyjny na poddziedziny:
+                            </p>
+                            <ul>
+                                <li>statykę płynów</li>
+                                <li>kinematykę płynów</li>
+                                <li>dynamikę płynów</li>
+                            </ul>
+                            <p>
+                                Przy sprecyzowaniu obiektu badań (aero-: gaz; hydro-: ciecz):
+                            </p>
+                            <ul>
+                                <li>aerostatykę</li>
+                                <li>aerodynamikę</li>
+                                <li>hydrostatykę</li>
+                                <li>hydrodynamikę</li>
+                                <li>hydraulikę</li>
+                            </ul>
+                            <p>
+                                Ten tradycyjny podział, pochodzący jeszcze z połowy XIX wieku jest archaiczny i nie odpowiada on aktualnemu stanowi wiedzy. Spotykany jest jednak w niektórych starszych podręcznikach (zwłaszcza polskich), których autorzy prezentują stan wiedzy sprzed stu lat.
+                                Obecnie kinematyka i dynamika płynów traktowane są łącznie i większość specjalistów nie widzi potrzeby ich rozdzielania. Określenia hydrodynamika i aerodynamika posiadają obecnie konotacje znacznie różniące się od tych używanych w XIX wieku.
+                                Obecnie aerodynamika zajmuje się ruchem płynów (właściwie tylko gazów) z prędkościami porównywalnymi z prędkością dźwięku w warunkach możliwości powstawania fal uderzeniowych. Tak rozumiana aerodynamika powiązana jest ściśle z termodynamiką, gdyż efekty cieplne odgrywają tutaj kluczową rolę i nie mogą być one pominięte.
+                            </P>
+                            <p>
+                                Natomiast hydrodynamika zajmuje się ruchem płynów (zarówno cieczy, jak i gazów) z prędkościami, przy których efekty termodynamiczne oraz efekty pojawiające się przy prędkościach porównywalnych z prędkością dźwięku nie odgrywają istotnej roli i ich obecność może być zaniedbana. W tym sensie hydrodynamika mieści w sobie dawną kinematykę płynów. Jest też w zasadzie dziedziną zakładającą izotermiczność procesów transportu masy.
+                                Wyróżnia się natomiast wyraźnie hydrodynamikę płynów idealnych od hydrodynamiki płynów rzeczywistych, zwanej bardziej ściśle hydrodynamiką płynów lepkich. Zasadnicza różnica między tymi działami dotyczy uwzględniania tarcia wewnętrznego w płynie przejawiającego się w postaci lepkości. W wielu sytuacjach uwzględnianie lub nieuwzględnianie lepkości prowadzi do całkowicie odmiennych fizykalnych obrazów przepływu. Odrębny jest także matematyczny sposób opisu ruchu płynu w obydwu dziedzinach. W hydrodynamice płynów idealnych kluczową rolę odgrywają Równanie Eulera oraz jego całka – równanie Bernoulliego. Natomiast hydrodynamika płynów lepkich oparta jest na hydrodynamicznym prawie Newtona oraz równaniu Naviera-Stokesa.
+                                Ponieważ zarówno prawo Newtona, jak i równanie Naviera-Stokesa posiadają bardzo ograniczone możliwości zastosowań w odniesieniu do niestatecznych przepływów płynów lepkich, dlatego też w obrębie mechaniki płynów wyróżnić można szybko rozwijającą się teorię turbulencji.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections plyny_dzialy">
+                    <h3 class="section_header">Odrębne działy</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content">
+                            <h4 class="article_header">Odrębne działy mechaniki płynów</h4>
+
+                            <p>
+                                Odrębnymi działami mechaniki płynów są też:
+                            </p>
+                            <ul>
+                                <li>hydrodynamika przepływów wielofazowych, zajmująca się równoczesnym przepływem dwóch lub więcej faz, niekiedy z uwzględnieniem przejść fazowych,</li>
+                                <li>hydrodynamika podziemna, zajmująca się bardzo powolnymi przepływami w ośrodkach porowatych, szczelinowych i szczelinowo-porowych,</li>
+                                <li>dynamika płynów nieliniowych, zwana też dynamiką płynów nienewtonowskich, stanowiąca obecnie dział mechaniki ośrodków nieliniowych,</li>
+                                <li>magnetohydrodynamika, zajmująca się analizą ruchu plazmy w warunkach jej oddziaływania z polem elektromagnetycznym,</li>
+                                <li>hydrodynamika płynów nadciekłych, nie mieszcząca się właściwie w obrębie mechaniki płynów ze względu na istotną rolę efektów kwantowych.</li>
+                            </ul>
+                            <p>
+                                Każda z tych dziedzin posiada właściwą dla siebie, obszerną literaturę i nie są one omawiane w ogólnych podręcznikach mechaniki płynów.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="sections rozne">
+                    <h3 class="section_header">Różne pojęcia</h3>
+
+                    <div class="section_horizontal">
+                        <article class="content" id="frame_height">
+                            <h4 class="article_header">Różne pojęcia z mechaniki klasycznej</h4>
+
+                            <p>Lista pojęć dotyczących mechaniki klasycznej (opis rozwija się po kliknięciu):</p>
+                            <ul>
+                                <li><a href="https://pl.wikipedia.org/wiki/Wymiar_(matematyka)" target="frame1">wymiar</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Przestrze%C5%84_(fizyka)" target="frame1">przestrzeń</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Czas" target="frame1">czas</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Ruch_(fizyka)" target="frame1">ruch</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Pr%C4%99dko%C5%9B%C4%87" target="frame1">prędkość</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Masa_(fizyka)" target="frame1">masa</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/P%C4%99d_(fizyka)" target="frame1">pęd</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Si%C5%82a" target="frame1">siła</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Energia_(fizyka)" target="frame1">energia</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Moment_p%C4%99du" target="frame1">moment pędu</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Moment_si%C5%82y" target="frame1">moment siły</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Prawa_zachowania" target="frame1">prawa zachowania</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Oscylator_harmoniczny" target="frame1">oscylator harmoniczny</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Fala" target="frame1">fala</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Praca_(fizyka)" target="frame1">praca</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Moc" target="frame1">moc</a></li>
+                                <li><a href="https://pl.wikipedia.org/wiki/Tarcie_(fizyka)" target="frame1">tarcie</a></li>
+                            </ul>
+                        </article>
+
+                        <iframe name="frame1" id="frametag"></iframe>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="page_footer">
+                <div id="footer_left">
+                    <div class="fontchange_letters">A</div>
+                    <div class="fontchange_letters">A</div>
+                    <div class="fontchange_letters">A</div>
+                    <img id="minus_icon" class="fontsize_icons" src="images/svg/minus.svg" alt="Ikona minusa">
+                    <img id="plus_icon" class="fontsize_icons" src="images/svg/plus.svg" alt="Ikona plusa">
+                </div>
+
+                <div>
+                    <p>Autor: Dominik Kobyra</p>
+                </div>
+
+                <div>
+                    <a href="doc/documentation.html">Dokumentacja</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
